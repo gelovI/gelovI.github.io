@@ -68,3 +68,27 @@ document.addEventListener("keydown", (event) => {
     showImage(currentIndex - 1);
   }
 });
+
+// Toggle Projects Section
+const toggleProjectsBtn = document.getElementById("toggleProjects");
+const hiddenProjects = document.querySelectorAll(".hidden-project");
+
+if (toggleProjectsBtn && hiddenProjects.length) {
+  let projectsOpen = false;
+
+  toggleProjectsBtn.addEventListener("click", () => {
+    projectsOpen = !projectsOpen;
+
+    hiddenProjects.forEach((project) => {
+      if (projectsOpen) {
+        project.classList.add("show");
+      } else {
+        project.classList.remove("show");
+      }
+    });
+
+    toggleProjectsBtn.textContent = projectsOpen
+      ? "Weniger anzeigen"
+      : "Mehr anzeigen";
+  });
+}

@@ -532,3 +532,22 @@ a:hover {
     height: 42px;
   }
 }
+
+/* Projects toggle */
+.hidden-project {
+  display: none;
+}
+
+.hidden-project.show {
+  display: block;
+}
+
+.projects-toggle-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.projects-toggle {
+  min-width: 180px;
+}
