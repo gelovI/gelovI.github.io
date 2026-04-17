@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivan Gelov | Kotlin Developer</title>
+    <meta
+      name="description"
+      content="Portfolio von Ivan Gelov – Kotlin, Android, Jetpack Compose und Desktop Apps."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <img src="assets/images/ig_logo.png" alt="Logo" class="logo" />
+        <div class="nav-links">
+          <a href="#about">Über mich</a>
+          <a href="#projects">Projekte</a>
+          <a href="#stack">Tech Stack</a>
+          <a href="#contact">Kontakt</a>
+        </div>
+      </nav>
+
+      <section class="hero-content">
+        <p class="eyebrow">Kotlin • Android • Jetpack Compose • Desktop</p>
+        <h1>Hi, ich bin Ivan Gelov</h1>
+        <p class="hero-text">
+          Ich entwickle moderne Android- und Desktop-Apps mit Kotlin, Jetpack
+          Compose und Fokus auf Architektur, Performance und sauberem State
+          Management.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#projects">Meine Projekte</a>
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/gelovI"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
+      </section>
+    </header>
+
+    <main class="container">
+      <section id="about" class="section">
+        <h2>Über mich</h2>
+        <p>
+          Ich spezialisiere mich auf App-Entwicklung mit Kotlin und baue
+          Anwendungen, die nicht nur gut aussehen, sondern auch technisch sauber
+          umgesetzt sind. Besonders interessieren mich
+          Offline-First-Architekturen, modulare Strukturen, lokale Persistenz,
+          API-Integration und produktionsnahe App-Konzepte.
+        </p>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projekte</h2>
+        <p>
+          Eine Auswahl meiner Projekte mit Fokus auf skalierbare Architektur,
+          Offline-First-Systeme, Android- und Desktop-Entwicklung sowie
+          produktionsnahe technische Konzepte.
+        </p>
+
+        <div class="projects-grid">
+          <article class="project-card card featured">
+            <div
+              class="project-image-wrapper"
+              data-images="assets/images/grafana1.png,assets/images/grafana2.png,assets/images/mk6_bild.png"
+            >
+              <img
+                src="assets/images/grafana1.png"
+                alt="TicketSystem Screenshot"
+                class="project-image"
+              />
+            </div>
+
+            <div class="project-content">
+              <p class="project-label">Backend / Scalability</p>
+              <h3>TicketSystem – Lastfähige Reservierungsplattform</h3>
+              <p class="project-subtitle">
+                Kotlin, Ktor, PostgreSQL, Prometheus, Grafana, k6
+              </p>
+              <p class="project-description">
+                Architekturkonzept für eine reservierungsnahe Plattform unter
+                hoher Last. Der Fokus lag auf Backpressure statt Failures,
+                konsistentem Locking, idempotenten Requests,
+                Sync-/Async-Trennung und Observability-first, um Race
+                Conditions, Datenbank-Bottlenecks und Lastspitzen kontrolliert
+                zu verarbeiten.
+              </p>
+
+              <ul class="tags">
+                <li>Kotlin</li>
+                <li>Ktor</li>
+                <li>PostgreSQL</li>
+                <li>Rate Limiting</li>
+                <li>Background Processing</li>
+                <li>Observability</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="#" class="btn btn-primary">GitHub</a>
+                <a href="#" class="btn btn-secondary">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card">
+            <div
+              class="project-image-wrapper"
+              data-images="
+                    assets/images/coding_agent1.png,
+                    assets/images/coding_agent2.png
+                "
+            >
+              <img
+                src="assets/images/coding_agent1.png"
+                alt="CodingAgent Screenshot"
+                class="project-image"
+              />
+            </div>
+
+            <div class="project-content">
+              <p class="project-label">AI / Tooling</p>
+              <h3>CodingAgent – Neuauflage</h3>
+              <p class="project-subtitle">
+                Agenten-Architektur mit Vektorspeicher und modularer
+                Tool-Registry
+              </p>
+              <p class="project-description">
+                Neu konzipierter Coding-Agent mit klarer Trennung zwischen
+                Tool-Mode und Knowledge-Mode. Das System kombiniert einen
+                modularen Agent-Core, semantische Langzeitspeicherung über
+                Vektordatenbank und eine saubere Layer-Struktur aus UI,
+                Orchestrator, LLM-Client, Memory-Service und Tool-System.
+              </p>
+
+              <ul class="tags">
+                <li>LLM Integration</li>
+                <li>Vector Memory</li>
+                <li>Tool System</li>
+                <li>Modular Architecture</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="#" class="btn btn-primary">GitHub</a>
+                <a href="#" class="btn btn-secondary">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card">
+            <div
+              class="project-image-wrapper"
+              data-images="
+                    assets/images/ops1.png,
+                    assets/images/ops2.png,
+                    assets/images/ops3.png
+                "
+            >
+              <img
+                src="assets/images/ops1.png"
+                alt="Ops Screenshot"
+                class="project-image"
+              />
+            </div>
+
+            <div class="project-content">
+              <p class="project-label">Offline-First / Sync</p>
+              <h3>Ops – Offline-First Sync Platform</h3>
+              <p class="project-subtitle">
+                Robuste Synchronisation für reale Netzwerkbedingungen
+              </p>
+              <p class="project-description">
+                Sync-Architektur für instabile Netzwerke und
+                Multi-Device-Szenarien. Umgesetzt mit Local DB, Outbox Pattern,
+                idempotentem Push, cursor-basiertem Pull, persistentem
+                Server-Cursor und LWW-Konfliktstrategie. Ergänzt wurde das
+                System durch integrierte Sync-Debug- und
+                Observability-Funktionen.
+              </p>
+
+              <ul class="tags">
+                <li>Offline First</li>
+                <li>Outbox Pattern</li>
+                <li>SQLite</li>
+                <li>Sync Debug</li>
+                <li>Conflict Resolution</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="#" class="btn btn-primary">GitHub</a>
+                <a href="#" class="btn btn-secondary">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card">
+            <div
+              class="project-image-wrapper"
+              data-images="
+                    assets/images/dienst_plan1.jpg,
+                    assets/images/dienst_plan2.jpg,
+                    assets/images/dienst_plan3.jpg,
+                    assets/images/dienst_plan4.jpg
+                "
+            >
+              <img
+                src="assets/images/dienst_plan1.jpg"
+                alt="DienstPlan Screenshot"
+                class="project-image"
+              />
+            </div>
+
+            <div class="project-content">
+              <p class="project-label">Android App</p>
+              <h3>DienstPlan – Mobile Workforce Tracking</h3>
+              <p class="project-subtitle">
+                Reaktiver MVVM-Stack mit deterministischer Domain-Logik
+              </p>
+              <p class="project-description">
+                Android-Anwendung zur mobilen Arbeitszeit- und Schichtübersicht
+                mit StateFlow-basierter UI-Synchronisation, persistenter
+                SQLite-Struktur, versionierten Datenbankmigrationen und
+                domain-getriebener Zeitlogik. Ergänzt durch reaktive
+                Monatsnavigation und Canvas-basierte Statistik-Visualisierung.
+              </p>
+
+              <ul class="tags">
+                <li>Kotlin</li>
+                <li>Android</li>
+                <li>MVVM</li>
+                <li>StateFlow</li>
+                <li>SQLite</li>
+                <li>Canvas</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="#" class="btn btn-primary">GitHub</a>
+                <a href="#" class="btn btn-secondary">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card">
+            <div
+              class="project-image-wrapper"
+              data-images="
+                    assets/images/organon1.png,
+                    assets/images/organon3.png,
+                    assets/images/organon2.png
+                "
+            >
+              <img
+                src="assets/images/organon1.png"
+                alt="Organon Screenshot"
+                class="project-image"
+              />
+            </div>
+
+            <div class="project-content">
+              <p class="project-label">Desktop / AI Integration</p>
+              <h3>
+                Organon – Lokale KI-Integration in ein Projektmanagement-System
+              </h3>
+              <p class="project-subtitle">
+                Clean Architecture, SQLDelight, lokale LLM-Orchestrierung
+              </p>
+              <p class="project-description">
+                Projektmanagement-System mit lokaler KI-Integration und Fokus
+                auf Datenschutz by Design. Die Architektur kombiniert Clean
+                Architecture, RBAC, SQLDelight-Persistenz und lokale
+                LLM-Ausführung, um aus Prompts über Intent Parsing konkrete
+                Systemänderungen im UseCase- und Repository-Layer abzuleiten.
+              </p>
+
+              <ul class="tags">
+                <li>Clean Architecture</li>
+                <li>SQLDelight</li>
+                <li>Local AI</li>
+                <li>RBAC</li>
+                <li>Offline Capable</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="#" class="btn btn-primary">GitHub</a>
+                <a href="#" class="btn btn-secondary">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card">
+            <div
+              class="project-image-wrapper"
+              data-images="
+                    assets/images/betriebskosten1.png,
+                    assets/images/betriebskosten2.png
+                "
+            >
+              <img
+                src="assets/images/betriebskosten1.png"
+                alt="Betriebskosten Manager Screenshot"
+                class="project-image"
+              />
+            </div>
+
+            <div class="project-content">
+              <p class="project-label">Desktop App</p>
+              <h3>Betriebskosten Manager – Verwaltung und Abrechnung</h3>
+              <p class="project-subtitle">
+                Kotlin, Compose Desktop, SQLite, Exposed ORM
+              </p>
+              <p class="project-description">
+                Native Desktop-Anwendung für strukturierte
+                Betriebskostenverwaltung mit lokaler SQLite-Datenbank,
+                typsicherem Datenzugriff über Exposed ORM und modularer
+                Architektur für Nutzer-, Messdaten- und Abrechnungslogik. Dazu
+                kommen dynamische Live-Berechnungen sowie PDF-Generierung für
+                archivierungsfähige Abrechnungen.
+              </p>
+
+              <ul class="tags">
+                <li>Kotlin</li>
+                <li>Compose Desktop</li>
+                <li>SQLite</li>
+                <li>Exposed</li>
+                <li>PDF Export</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="#" class="btn btn-primary">GitHub</a>
+                <a href="#" class="btn btn-secondary">Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="stack" class="section">
+        <h2>Tech Stack</h2>
+        <div class="stack-grid">
+          <div class="card stack-card">
+            <h3>Languages</h3>
+            <p>Kotlin, SQL, TypeScript (in Aufbau)</p>
+          </div>
+          <div class="card stack-card">
+            <h3>Android</h3>
+            <p>
+              Jetpack Compose, Navigation, Room, DataStore, Coroutines, Flow
+            </p>
+          </div>
+          <div class="card stack-card">
+            <h3>Desktop</h3>
+            <p>
+              Kotlin Desktop, Compose Multiplatform, lokale Datenverarbeitung
+            </p>
+          </div>
+          <div class="card stack-card">
+            <h3>Tools</h3>
+            <p>Git, GitHub, Android Studio, VS Code, Gradle</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Kontakt</h2>
+        <div class="card contact-card">
+          <p>Du kannst mich hier erreichen:</p>
+          <p>
+            <strong>GitHub:</strong>
+            <a
+              href="https://github.com/gelovI"
+              target="_blank"
+              rel="noopener noreferrer"
+              >github.com/gelovI</a
+            >
+          </p>
+          <p>
+            <strong>LinkedIn:</strong>
+            <a
+              href="https://linkedin.com/in/ivan-gelov"
+              target="_blank"
+              rel="noopener noreferrer"
+              >linkedin.com/in/ivan-gelov</a
+            >
+          </p>
+          <p><strong>E-Mail:</strong> ivan.gelov@gmx.de </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Ivan Gelov. Built with HTML & CSS.</p>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-backdrop"></div>
+
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxClose">×</button>
+
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">‹</button>
+
+        <div class="lightbox-image-wrapper">
+          <img
+            id="lightboxImage"
+            class="lightbox-image"
+            src=""
+            alt="Projektbild groß"
+          />
+        </div>
+
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">›</button>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
