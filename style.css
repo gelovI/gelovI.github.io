@@ -551,3 +551,41 @@ a:hover {
 .projects-toggle {
   min-width: 180px;
 }
+
+/* DE/EN Toggle */
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-left: 8px;
+}
+
+.lang-link {
+  padding: 6px 12px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-link:hover {
+  color: var(--text);
+  background: rgba(30, 41, 59, 0.55);
+}
+
+.lang-link.active {
+  background: rgba(56, 189, 248, 0.18);
+  color: var(--text);
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    align-items: center;
+  }
+
+  .lang-toggle {
+    margin-left: 0;
+  }
+}

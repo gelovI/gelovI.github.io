@@ -76,6 +76,9 @@ const hiddenProjects = document.querySelectorAll(".hidden-project");
 if (toggleProjectsBtn && hiddenProjects.length) {
   let projectsOpen = false;
 
+  const showMoreText = toggleProjectsBtn.dataset.showMore || "Show more";
+  const showLessText = toggleProjectsBtn.dataset.showLess || "Show less";
+
   toggleProjectsBtn.addEventListener("click", () => {
     projectsOpen = !projectsOpen;
 
@@ -87,8 +90,6 @@ if (toggleProjectsBtn && hiddenProjects.length) {
       }
     });
 
-    toggleProjectsBtn.textContent = projectsOpen
-      ? "Weniger anzeigen"
-      : "Mehr anzeigen";
+    toggleProjectsBtn.textContent = projectsOpen ? showLessText : showMoreText;
   });
 }
