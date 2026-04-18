@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ops – Offline-First Sync Platform</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <header class="hero" style="min-height: auto; padding-bottom: 40px">
+      <nav class="nav">
+        <a href="../en.html" class="btn btn-secondary">← Back</a>
+
+        <div class="lang-toggle">
+          <a href="ops.de.html" class="lang-link">DE</a>
+          <a href="ops.html" class="lang-link active">EN</a>
+        </div>
+      </nav>
+
+      <section class="hero-content">
+        <p class="eyebrow">Offline-First / Sync</p>
+        <h1>Ops</h1>
+
+        <p class="hero-text">
+          Reliable synchronization architecture for real-world network conditions
+          with a focus on consistency, repeatability, and transparent debugging.
+        </p>
+
+        <div class="hero-buttons">
+          <a
+            href="https://github.com/gelovI/Offline-First-Sync-Engine"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          <a href="../en.html#projects" class="btn btn-secondary">
+            All Projects
+          </a>
+        </div>
+      </section>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <h2>Overview</h2>
+        <p>
+          Ops is an architecture and application concept for synchronization in
+          offline-first scenarios. The goal was to keep data consistent and
+          traceable even under unstable network conditions, across multiple
+          devices, and during repeated requests.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Problem</h2>
+        <p>
+          Traditional sync approaches often fail because of unstable
+          connections, duplicate requests, conflicts across devices, and state
+          transitions that are difficult to debug. This leads to inconsistent
+          data and unreliable user experience.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Architecture Approach</h2>
+
+        <div class="stack-grid">
+          <div class="card stack-card">
+            <h3>Offline-First Local DB</h3>
+            <p>
+              All changes are persisted locally first, allowing the application
+              to remain fully usable even without a network connection.
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <h3>Outbox Pattern</h3>
+            <p>
+              Local changes are recorded as outgoing operations and transferred
+              to the server in a controlled and recoverable way.
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <h3>Idempotent Push</h3>
+            <p>
+              Repeated requests do not create duplicates because each change can
+              be uniquely identified and safely retried.
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <h3>Cursor-Based Pull</h3>
+            <p>
+              Server-side changes are loaded incrementally, keeping
+              synchronization efficient and easier to reason about.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Key Features</h2>
+
+        <ul class="tags">
+          <li>Offline First</li>
+          <li>Outbox Pattern</li>
+          <li>SQLite</li>
+          <li>Cursor Pull</li>
+          <li>Idempotent Push</li>
+          <li>LWW Conflict Strategy</li>
+          <li>Sync Debug</li>
+        </ul>
+
+        <p style="margin-top: 16px">
+          The system also includes integrated debug and observability views to
+          make cursor status, outbox state, reset detection, and server-side
+          change tracking transparent.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Sync Debug & Transparency</h2>
+
+        <div class="projects-grid">
+          <div class="project-card card">
+            <img src="../assets/images/ops1.png" class="project-image" />
+          </div>
+
+          <div class="project-card card">
+            <img src="../assets/images/ops2.png" class="project-image" />
+          </div>
+
+          <div class="project-card card">
+            <img src="../assets/images/ops3.png" class="project-image" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Challenges</h2>
+        <p>
+          The main challenge was combining repeatability, conflict resolution,
+          and unreliable network behavior without making the system overly
+          complex. At the same time, the sync state needed to remain observable
+          and understandable at all times.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Learnings</h2>
+        <p>
+          Offline-first is not just a persistence strategy, but an architectural
+          principle. Reliable synchronization depends on well-modeled changes,
+          idempotent communication, and strong visibility into the state of the
+          system.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Ivan Gelov</p>
+    </footer>
+  </body>
+</html>

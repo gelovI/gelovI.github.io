@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodingAgent – Neuauflage</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <header class="hero" style="min-height: auto; padding-bottom: 40px">
+      <nav class="nav">
+        <a href="../index.html" class="btn btn-secondary">← Zurück</a>
+
+        <div class="lang-toggle">
+          <a href="coding-agent.de.html" class="lang-link active">DE</a>
+          <a href="coding-agent.html" class="lang-link">EN</a>
+        </div>
+      </nav>
+
+      <section class="hero-content">
+        <p class="eyebrow">AI / Tooling</p>
+        <h1>CodingAgent</h1>
+
+        <p class="hero-text">
+          Neu konzipierter Coding-Agent mit semantischem Langzeitgedächtnis,
+          modularer Tool-Architektur und klarer Layer-Trennung für
+          kontextbasierte Assistenz.
+        </p>
+
+        <div class="hero-buttons">
+          <a
+            href="https://github.com/gelovI/coding_agent"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          <a href="../index.html#projects" class="btn btn-secondary">
+            Alle Projekte
+          </a>
+        </div>
+      </section>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <h2>Überblick</h2>
+        <p>
+          CodingAgent ist eine neu aufgebaute Agenten-Architektur zur
+          Unterstützung bei Code-, Architektur- und Projektfragen. Ziel war es,
+          die Grenzen klassischer, rein promptbasierter LLM-Assistenten zu
+          überwinden und persistenten, semantischen Kontext nutzbar zu machen.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Problemstellung</h2>
+        <p>
+          Entwickler wechseln häufig zwischen IDE, Dokumentation,
+          Architektur-Notizen und externen Tools. Klassische LLM-Assistenten
+          verlieren dabei schnell den Projektkontext, insbesondere bei
+          größeren Codebasen, Refactorings und langfristigen Fragestellungen.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Architekturansatz</h2>
+
+        <div class="stack-grid">
+          <div class="card stack-card">
+            <h3>Tool-Mode / Knowledge-Mode</h3>
+            <p>
+              Die Agentenlogik trennt operative Tool-Aufrufe klar von
+              wissensbasierter Kontextnutzung und semantischer Suche.
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <h3>Vektorbasiertes Langzeitgedächtnis</h3>
+            <p>
+              Projektwissen wird semantisch gespeichert, um relevante
+              Informationen über längere Zeiträume abrufbar zu halten.
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <h3>Klare Layer-Struktur</h3>
+            <p>
+              UI, Orchestrator, LLM-Client, Memory-Service und Tool-System sind
+              bewusst voneinander getrennt, um Wartbarkeit und Erweiterbarkeit
+              sicherzustellen.
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <h3>Modulare Tool-Registry</h3>
+            <p>
+              Neue Tools für Analyse, Dateioperationen oder Indexierung können
+              strukturiert ergänzt werden, ohne die Kernlogik zu destabilisieren.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Technische Features</h2>
+
+        <ul class="tags">
+          <li>LLM Integration</li>
+          <li>Vector Memory</li>
+          <li>Tool Registry</li>
+          <li>Semantic Search</li>
+          <li>Modular Architecture</li>
+          <li>Layer Separation</li>
+        </ul>
+
+        <p style="margin-top: 16px">
+          Der Schwerpunkt lag auf einer robusten Agentenarchitektur, die nicht
+          nur Antworten generiert, sondern Kontext langfristig nutzbar macht und
+          projektbezogene Fragen strukturierter beantworten kann.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>UI & Agentenfluss</h2>
+
+        <div class="projects-grid">
+          <div class="project-card card">
+            <img src="../assets/images/coding_agent1.png" class="project-image" />
+          </div>
+
+          <div class="project-card card">
+            <img src="../assets/images/coding_agent2.png" class="project-image" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Herausforderungen</h2>
+        <p>
+          Die größte Herausforderung bestand darin, den Agenten nicht nur
+          funktional, sondern architektonisch nachhaltig aufzubauen. Besonders
+          wichtig war die Trennung zwischen Prompting, Memory, Orchestrierung
+          und Tools, damit der Agent skalierbar und wartbar bleibt.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Learnings</h2>
+        <p>
+          Intelligente Assistenzsysteme brauchen mehr als ein gutes Modell.
+          Langfristig hilfreich werden sie erst dann, wenn Kontext, Tooling und
+          Systemarchitektur sauber zusammenspielen. Persistenter semantischer
+          Kontext ist dabei ein zentraler Hebel.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Ivan Gelov</p>
+    </footer>
+  </body>
+</html>
