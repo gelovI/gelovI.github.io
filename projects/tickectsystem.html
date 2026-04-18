@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicketSystem – High-Load Reservation Platform</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <header class="hero" style="min-height: auto; padding-bottom: 40px">
+      <nav class="nav">
+        <a href="../en.html" class="btn btn-secondary">← Back</a>
+
+        <div class="lang-toggle">
+          <a href="ticketsystem.de.html" class="lang-link">DE</a>
+          <a href="ticketsystem.html" class="lang-link active">EN</a>
+        </div>
+      </nav>
+
+      <section class="hero-content">
+        <p class="eyebrow">Backend / Scalability</p>
+        <h1>TicketSystem</h1>
+
+        <p class="hero-text">
+          Scalable reservation architecture designed for high-load scenarios,
+          focusing on backpressure, consistency, and observability.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary">GitHub</a>
+          <a href="../index.html#projects" class="btn btn-secondary">
+            All Projects
+          </a>
+        </div>
+      </section>
+    </header>
+
+    <main class="container">
+      <!-- OVERVIEW -->
+      <section class="section">
+        <h2>Overview</h2>
+        <p>
+          TicketSystem is an architecture concept for handling high-concurrency
+          reservation workflows. Instead of maximizing request throughput at all
+          costs, the system prioritizes consistency, controlled load handling,
+          and predictable behavior under stress.
+        </p>
+      </section>
+
+      <!-- PROBLEM -->
+      <section class="section">
+        <h2>Problem</h2>
+        <p>
+          High-demand reservation systems often fail under load due to race
+          conditions, database contention, and uncontrolled request spikes. This
+          leads to overbooking, inconsistent data, and degraded user experience.
+        </p>
+      </section>
+
+      <!-- APPROACH -->
+      <section class="section">
+        <h2>Architecture Approach</h2>
+
+        <div class="stack-grid">
+          <div class="card stack-card">
+            <h3>Backpressure over Failures</h3>
+            <p>
+              Incoming requests are controlled through rate limiting and
+              queueing, ensuring the system remains stable instead of collapsing
+              under load.
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <h3>Consistent Locking</h3>
+            <p>
+              Critical sections are protected through deterministic locking
+              strategies to prevent race conditions and double bookings.
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <h3>Sync / Async Separation</h3>
+            <p>
+              User-facing actions are kept lightweight, while heavy operations
+              are processed asynchronously in background workers.
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <h3>Idempotent Requests</h3>
+            <p>
+              All operations are designed to be safely repeatable, ensuring
+              consistency even under retries or network issues.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="section">
+        <h2>Key Features</h2>
+
+        <ul class="tags">
+          <li>Kotlin</li>
+          <li>Ktor</li>
+          <li>PostgreSQL</li>
+          <li>Rate Limiting</li>
+          <li>Background Processing</li>
+          <li>Observability</li>
+          <li>Concurrency Control</li>
+        </ul>
+
+        <p style="margin-top: 16px">
+          The system integrates monitoring and performance analysis as a
+          first-class concern, allowing real-time visibility into request
+          handling, queue depth, and latency behavior.
+        </p>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="section">
+        <h2>Screenshots & Monitoring</h2>
+
+        <div class="projects-grid">
+          <div class="project-card card">
+            <img src="../assets/images/grafana1.png" class="project-image" />
+          </div>
+
+          <div class="project-card card">
+            <img src="../assets/images/grafana2.png" class="project-image" />
+          </div>
+
+          <div class="project-card card">
+            <img src="../assets/images/mk6_bild.png" class="project-image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- CHALLENGES -->
+      <section class="section">
+        <h2>Challenges</h2>
+        <p>
+          The main challenge was balancing throughput with consistency. Allowing
+          all requests to pass leads to system instability, while strict control
+          introduces latency. The solution required careful trade-offs between
+          user experience and system reliability.
+        </p>
+      </section>
+
+      <!-- LEARNINGS -->
+      <section class="section">
+        <h2>Learnings</h2>
+        <p>
+          This project reinforced that scalable systems are not about handling
+          maximum load at any cost, but about maintaining predictable and
+          consistent behavior under pressure. Observability, clear separation of
+          responsibilities, and deterministic logic are key to building reliable
+          systems.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Ivan Gelov</p>
+    </footer>
+  </body>
+</html>

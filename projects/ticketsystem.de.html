@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicketSystem – Lastfähige Reservierungsplattform</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <header class="hero" style="min-height: auto; padding-bottom: 40px;">
+      <nav class="nav">
+        <a href="../index.html" class="btn btn-secondary">← Zurück</a>
+
+        <!-- 🔥 HIER IST DER TOGGLE -->
+        <div class="lang-toggle">
+          <a href="ticketsystem.de.html" class="lang-link active">DE</a>
+          <a href="ticketsystem.html" class="lang-link">EN</a>
+        </div>
+      </nav>
+
+      <section class="hero-content">
+        <p class="eyebrow">Backend / Skalierung</p>
+        <h1>TicketSystem</h1>
+
+        <p class="hero-text">
+          Skalierbare Reservierungsarchitektur für Hochlast-Szenarien mit Fokus
+          auf Konsistenz, kontrollierte Lastverarbeitung und Observability.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary">GitHub</a>
+          <a href="../index.html#projects" class="btn btn-secondary">
+            Alle Projekte
+          </a>
+        </div>
+      </section>
+    </header>
+
+    <main class="container">
+      <!-- OVERVIEW -->
+      <section class="section">
+        <h2>Überblick</h2>
+        <p>
+          TicketSystem ist ein Architekturkonzept zur Verarbeitung von
+          hochgradig parallelen Reservierungsprozessen. Statt maximale
+          Request-Zahlen um jeden Preis zu akzeptieren, priorisiert das System
+          Stabilität, Konsistenz und vorhersagbares Verhalten unter Last.
+        </p>
+      </section>
+
+      <!-- PROBLEM -->
+      <section class="section">
+        <h2>Problemstellung</h2>
+        <p>
+          Systeme mit hoher Nachfrage scheitern oft an Race Conditions,
+          Datenbank-Engpässen und unkontrollierten Lastspitzen. Dies führt zu
+          Überbuchungen, inkonsistenten Daten und instabilem Verhalten.
+        </p>
+      </section>
+
+      <!-- ARCHITEKTUR -->
+      <section class="section">
+        <h2>Architekturansatz</h2>
+
+        <div class="stack-grid">
+          <div class="card stack-card">
+            <h3>Backpressure statt Failures</h3>
+            <p>
+              Anfragen werden aktiv reguliert, um Systemüberlastung zu vermeiden
+              und stabile Antwortzeiten sicherzustellen.
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <h3>Konsistentes Locking</h3>
+            <p>
+              Kritische Bereiche werden deterministisch geschützt, um doppelte
+              Buchungen und Race Conditions zu verhindern.
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <h3>Sync / Async Trennung</h3>
+            <p>
+              Benutzerinteraktionen bleiben leichtgewichtig, während schwere
+              Prozesse in Background-Worker ausgelagert werden.
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <h3>Idempotente Requests</h3>
+            <p>
+              Wiederholte Requests führen nicht zu inkonsistentem Zustand und
+              sind sicher erneut ausführbar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="section">
+        <h2>Technische Features</h2>
+
+        <ul class="tags">
+          <li>Kotlin</li>
+          <li>Ktor</li>
+          <li>PostgreSQL</li>
+          <li>Rate Limiting</li>
+          <li>Background Processing</li>
+          <li>Observability</li>
+          <li>Concurrency Control</li>
+        </ul>
+
+        <p style="margin-top: 16px;">
+          Monitoring und Performance-Analyse sind integraler Bestandteil der
+          Architektur und ermöglichen eine präzise Beobachtung von Lastverhalten
+          und Systemzustand.
+        </p>
+      </section>
+
+      <!-- SCREENSHOTS -->
+      <section class="section">
+        <h2>Monitoring & Visualisierung</h2>
+
+        <div class="projects-grid">
+          <div class="project-card card">
+            <img src="../assets/images/grafana1.png" class="project-image" />
+          </div>
+
+          <div class="project-card card">
+            <img src="../assets/images/grafana2.png" class="project-image" />
+          </div>
+
+          <div class="project-card card">
+            <img src="../assets/images/mk6_bild.png" class="project-image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- CHALLENGES -->
+      <section class="section">
+        <h2>Herausforderungen</h2>
+        <p>
+          Die zentrale Herausforderung bestand darin, einen Kompromiss zwischen
+          maximalem Durchsatz und Systemstabilität zu finden. Eine unkontrollierte
+          Annahme aller Requests führt zu Instabilität, während zu starke
+          Einschränkungen die User Experience verschlechtern.
+        </p>
+      </section>
+
+      <!-- LEARNINGS -->
+      <section class="section">
+        <h2>Learnings</h2>
+        <p>
+          Skalierbare Systeme zeichnen sich nicht dadurch aus, möglichst viele
+          Requests zu verarbeiten, sondern durch konsistentes Verhalten unter
+          Last. Observability, klare Verantwortlichkeiten und deterministische
+          Logik sind entscheidend für stabile Systeme.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Ivan Gelov</p>
+    </footer>
+  </body>
+</html>
