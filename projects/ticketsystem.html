@@ -23,8 +23,8 @@
         <h1>TicketSystem</h1>
 
         <p class="hero-text">
-          Scalable reservation architecture designed for high-load scenarios,
-          focusing on backpressure, consistency, and observability.
+          Reservation architecture for high-load scenarios with a focus on
+          controlled throughput, consistency, and predictable system behavior.
         </p>
 
         <div class="hero-buttons">
@@ -41,10 +41,9 @@
       <section class="section">
         <h2>Overview</h2>
         <p>
-          TicketSystem is an architecture concept for handling high-concurrency
-          reservation workflows. Instead of maximizing request throughput at all
-          costs, the system prioritizes consistency, controlled load handling,
-          and predictable behavior under stress.
+          TicketSystem is an architecture concept designed for reservation
+          workflows under high concurrency. The goal is not maximum request
+          throughput, but stable and consistent behavior under load.
         </p>
       </section>
 
@@ -52,9 +51,10 @@
       <section class="section">
         <h2>Problem</h2>
         <p>
-          High-demand reservation systems often fail under load due to race
-          conditions, database contention, and uncontrolled request spikes. This
-          leads to overbooking, inconsistent data, and degraded user experience.
+          High demand leads to race conditions, database contention, and
+          inconsistent booking states. Without proper load control, systems tend
+          to overbook, degrade in performance, and become difficult to reason
+          about.
         </p>
       </section>
 
@@ -66,33 +66,33 @@
           <div class="card stack-card">
             <h3>Backpressure over Failures</h3>
             <p>
-              Incoming requests are controlled through rate limiting and
-              queueing, ensuring the system remains stable instead of collapsing
-              under load.
+              Incoming requests are actively regulated to prevent system
+              overload and maintain stable response behavior under peak
+              conditions.
             </p>
           </div>
 
           <div class="card stack-card">
-            <h3>Consistent Locking</h3>
+            <h3>Deterministic Locking</h3>
             <p>
-              Critical sections are protected through deterministic locking
-              strategies to prevent race conditions and double bookings.
+              Critical operations are protected through deterministic locking to
+              avoid conflicting updates and duplicate reservations.
             </p>
           </div>
 
           <div class="card stack-card">
             <h3>Sync / Async Separation</h3>
             <p>
-              User-facing actions are kept lightweight, while heavy operations
-              are processed asynchronously in background workers.
+              User-facing interactions remain lightweight, while heavy
+              processing is decoupled and handled asynchronously.
             </p>
           </div>
 
           <div class="card stack-card">
             <h3>Idempotent Requests</h3>
             <p>
-              All operations are designed to be safely repeatable, ensuring
-              consistency even under retries or network issues.
+              Repeated requests are safe to execute and do not produce
+              inconsistent or duplicated results.
             </p>
           </div>
         </div>
@@ -113,9 +113,8 @@
         </ul>
 
         <p style="margin-top: 16px">
-          The system integrates monitoring and performance analysis as a
-          first-class concern, allowing real-time visibility into request
-          handling, queue depth, and latency behavior.
+          Observability is built into the system, enabling detailed analysis of
+          queue depth, latency, throughput, and system behavior under load.
         </p>
       </section>
 
@@ -142,10 +141,9 @@
       <section class="section">
         <h2>Challenges</h2>
         <p>
-          The main challenge was balancing throughput with consistency. Allowing
-          all requests to pass leads to system instability, while strict control
-          introduces latency. The solution required careful trade-offs between
-          user experience and system reliability.
+          The main challenge was balancing throughput, consistency, and system
+          stability. High-load systems must remain predictable and controllable,
+          not just fast.
         </p>
       </section>
 
@@ -153,11 +151,9 @@
       <section class="section">
         <h2>Learnings</h2>
         <p>
-          This project reinforced that scalable systems are not about handling
-          maximum load at any cost, but about maintaining predictable and
-          consistent behavior under pressure. Observability, clear separation of
-          responsibilities, and deterministic logic are key to building reliable
-          systems.
+          Scalability is not achieved by maximizing parallelism, but by
+          controlling load, ensuring deterministic behavior, and maintaining
+          strong visibility into the system state.
         </p>
       </section>
     </main>

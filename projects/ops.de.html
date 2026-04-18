@@ -23,8 +23,8 @@
         <h1>Ops</h1>
 
         <p class="hero-text">
-          Robuste Synchronisationsarchitektur für reale Netzwerkbedingungen mit
-          Fokus auf Konsistenz, Wiederholbarkeit und transparente Debugbarkeit.
+          Offline-First-Synchronisation für instabile Netzwerke, mehrere Geräte
+          und konsistente Datenzustände unter realen Bedingungen.
         </p>
 
         <div class="hero-buttons">
@@ -47,20 +47,20 @@
       <section class="section">
         <h2>Überblick</h2>
         <p>
-          Ops ist ein Architektur- und App-Konzept für Synchronisation in
-          Offline-First-Szenarien. Ziel war es, Daten auch bei instabilen
-          Netzwerken, mehreren Geräten und wiederholten Requests konsistent und
-          nachvollziehbar zu halten.
+          Ops ist ein Synchronisationskonzept für Offline-First-Anwendungen.
+          Ziel war eine robuste Verarbeitung von lokalen Änderungen,
+          Server-Updates und Wiederholungen, ohne die Nachvollziehbarkeit des
+          Systemzustands zu verlieren.
         </p>
       </section>
 
       <section class="section">
         <h2>Problemstellung</h2>
         <p>
-          Klassische Sync-Ansätze scheitern oft an instabilen Verbindungen,
-          doppelten Requests, Konflikten zwischen mehreren Geräten und schwer
-          nachvollziehbaren Zustandsübergängen. Das führt zu inkonsistenten
-          Datenständen und erschwertem Debugging.
+          Synchronisation wird komplex, sobald mehrere Geräte, instabile
+          Verbindungen und wiederholte Requests zusammenkommen. Ohne saubere
+          Modellierung entstehen Konflikte, doppelte Operationen und schwer
+          erklärbare Zustände.
         </p>
       </section>
 
@@ -71,32 +71,33 @@
           <div class="card stack-card">
             <h3>Offline-First Local DB</h3>
             <p>
-              Alle Änderungen werden zunächst lokal persistiert, sodass die App
-              auch ohne Netzwerkverbindung zuverlässig nutzbar bleibt.
+              Änderungen werden zuerst lokal gespeichert, damit die Anwendung
+              auch ohne Verbindung verlässlich nutzbar bleibt.
             </p>
           </div>
 
           <div class="card stack-card">
             <h3>Outbox Pattern</h3>
             <p>
-              Lokale Änderungen werden als ausgehende Operationen protokolliert
-              und kontrolliert an den Server übertragen.
+              Lokale Operationen werden protokolliert und kontrolliert an den
+              Server übergeben, statt direkt und unstrukturiert synchronisiert
+              zu werden.
             </p>
           </div>
 
           <div class="card stack-card">
             <h3>Idempotenter Push</h3>
             <p>
-              Wiederholte Requests erzeugen keine Duplikate, da jede Änderung
-              eindeutig identifizierbar bleibt.
+              Wiederholte Übertragungen bleiben sicher, weil identische
+              Änderungen nicht zu doppelten Ergebnissen führen.
             </p>
           </div>
 
           <div class="card stack-card">
             <h3>Cursor-basierter Pull</h3>
             <p>
-              Serveränderungen werden inkrementell geladen, wodurch Sync
-              effizient und nachvollziehbar bleibt.
+              Server-Änderungen werden inkrementell geladen, wodurch der
+              Synchronisations- verlauf effizient und nachvollziehbar bleibt.
             </p>
           </div>
         </div>
@@ -116,9 +117,9 @@
         </ul>
 
         <p style="margin-top: 16px">
-          Ergänzend wurde eine integrierte Debug- und Observability-Sicht
-          umgesetzt, um Cursor-Status, Outbox-Zustand, Reset-Erkennung und
-          serverseitige Änderungsstände transparent zu machen.
+          Ergänzt wurde das System um Sync-Debug- und Transparenzmechanismen,
+          damit Outbox-Zustand, Cursor-Fortschritt und Reset-Szenarien sichtbar
+          und besser analysierbar bleiben.
         </p>
       </section>
 
@@ -143,20 +144,20 @@
       <section class="section">
         <h2>Herausforderungen</h2>
         <p>
-          Die größte Schwierigkeit lag darin, Wiederholbarkeit, Konfliktlösung
-          und Netzwerkunzuverlässigkeit zusammenzuführen, ohne die Architektur
-          unnötig komplex zu machen. Gleichzeitig sollte der Systemzustand
-          jederzeit nachvollziehbar bleiben.
+          Die größte Herausforderung bestand darin, Konsistenz und
+          Wiederholbarkeit sicherzustellen, ohne die Architektur unnötig
+          schwergewichtig zu machen. Gleichzeitig musste der Sync-Zustand für
+          Analyse und Debugging transparent bleiben.
         </p>
       </section>
 
       <section class="section">
         <h2>Learnings</h2>
         <p>
-          Offline-First ist nicht nur ein Persistenzthema, sondern ein
-          Architekturprinzip. Verlässliche Synchronisation entsteht durch
-          saubere Modellierung von Änderungen, idempotente Kommunikation und
-          gute Transparenz über den Zustand des Systems.
+          Verlässliche Synchronisation beginnt bei einer guten
+          Änderungsmodellierung. Offline-First erfordert nicht nur lokale
+          Persistenz, sondern klar definierte Datenflüsse, idempotente
+          Kommunikation und gute Sichtbarkeit auf den Zustand des Systems.
         </p>
       </section>
     </main>

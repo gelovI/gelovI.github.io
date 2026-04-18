@@ -8,11 +8,10 @@
   </head>
 
   <body>
-    <header class="hero" style="min-height: auto; padding-bottom: 40px;">
+    <header class="hero" style="min-height: auto; padding-bottom: 40px">
       <nav class="nav">
         <a href="../index.html" class="btn btn-secondary">← Zurück</a>
 
-        <!-- 🔥 HIER IST DER TOGGLE -->
         <div class="lang-toggle">
           <a href="ticketsystem.de.html" class="lang-link active">DE</a>
           <a href="ticketsystem.html" class="lang-link">EN</a>
@@ -24,8 +23,9 @@
         <h1>TicketSystem</h1>
 
         <p class="hero-text">
-          Skalierbare Reservierungsarchitektur für Hochlast-Szenarien mit Fokus
-          auf Konsistenz, kontrollierte Lastverarbeitung und Observability.
+          Reservierungsarchitektur für Hochlast-Szenarien mit Fokus auf
+          kontrollierte Lastverarbeitung, Konsistenz und nachvollziehbare
+          Systemzustände.
         </p>
 
         <div class="hero-buttons">
@@ -42,10 +42,10 @@
       <section class="section">
         <h2>Überblick</h2>
         <p>
-          TicketSystem ist ein Architekturkonzept zur Verarbeitung von
-          hochgradig parallelen Reservierungsprozessen. Statt maximale
-          Request-Zahlen um jeden Preis zu akzeptieren, priorisiert das System
-          Stabilität, Konsistenz und vorhersagbares Verhalten unter Last.
+          TicketSystem ist ein Architekturkonzept für Reservierungsprozesse
+          unter hoher Parallelität. Im Mittelpunkt steht nicht maximale
+          Request-Annahme, sondern stabiles und konsistentes Verhalten unter
+          Last.
         </p>
       </section>
 
@@ -53,9 +53,10 @@
       <section class="section">
         <h2>Problemstellung</h2>
         <p>
-          Systeme mit hoher Nachfrage scheitern oft an Race Conditions,
-          Datenbank-Engpässen und unkontrollierten Lastspitzen. Dies führt zu
-          Überbuchungen, inkonsistenten Daten und instabilem Verhalten.
+          Hohe Zugriffszahlen führen in Reservierungssystemen schnell zu Race
+          Conditions, Datenbank-Engpässen und inkonsistenten Buchungszuständen.
+          Ohne Lastkontrolle entstehen Überbuchungen, instabile Antwortzeiten
+          und schwer nachvollziehbare Fehlerbilder.
         </p>
       </section>
 
@@ -67,32 +68,34 @@
           <div class="card stack-card">
             <h3>Backpressure statt Failures</h3>
             <p>
-              Anfragen werden aktiv reguliert, um Systemüberlastung zu vermeiden
-              und stabile Antwortzeiten sicherzustellen.
+              Eingehende Anfragen werden kontrolliert reguliert, damit das
+              System unter Last stabil bleibt, statt unkontrolliert zu kippen.
             </p>
           </div>
 
           <div class="card stack-card">
             <h3>Konsistentes Locking</h3>
             <p>
-              Kritische Bereiche werden deterministisch geschützt, um doppelte
-              Buchungen und Race Conditions zu verhindern.
+              Kritische Reservierungsvorgänge werden deterministisch geschützt,
+              um doppelte Buchungen und konkurrierende Zustandsänderungen zu
+              verhindern.
             </p>
           </div>
 
           <div class="card stack-card">
             <h3>Sync / Async Trennung</h3>
             <p>
-              Benutzerinteraktionen bleiben leichtgewichtig, während schwere
-              Prozesse in Background-Worker ausgelagert werden.
+              Zeitkritische Benutzerinteraktionen bleiben schlank, während
+              aufwendigere Verarbeitungsschritte entkoppelt im Hintergrund
+              laufen.
             </p>
           </div>
 
           <div class="card stack-card">
             <h3>Idempotente Requests</h3>
             <p>
-              Wiederholte Requests führen nicht zu inkonsistentem Zustand und
-              sind sicher erneut ausführbar.
+              Wiederholte Requests bleiben sicher beherrschbar und führen nicht
+              zu doppelten oder widersprüchlichen Ergebnissen.
             </p>
           </div>
         </div>
@@ -112,7 +115,7 @@
           <li>Concurrency Control</li>
         </ul>
 
-        <p style="margin-top: 16px;">
+        <p style="margin-top: 16px">
           Monitoring und Performance-Analyse sind integraler Bestandteil der
           Architektur und ermöglichen eine präzise Beobachtung von Lastverhalten
           und Systemzustand.
@@ -142,10 +145,10 @@
       <section class="section">
         <h2>Herausforderungen</h2>
         <p>
-          Die zentrale Herausforderung bestand darin, einen Kompromiss zwischen
-          maximalem Durchsatz und Systemstabilität zu finden. Eine unkontrollierte
-          Annahme aller Requests führt zu Instabilität, während zu starke
-          Einschränkungen die User Experience verschlechtern.
+          Die zentrale Herausforderung lag im Ausbalancieren von Durchsatz,
+          Konsistenz und Systemstabilität. Eine Architektur für Hochlast muss
+          nicht nur performant, sondern vor allem kontrollierbar und
+          vorhersehbar bleiben.
         </p>
       </section>
 
@@ -153,10 +156,10 @@
       <section class="section">
         <h2>Learnings</h2>
         <p>
-          Skalierbare Systeme zeichnen sich nicht dadurch aus, möglichst viele
-          Requests zu verarbeiten, sondern durch konsistentes Verhalten unter
-          Last. Observability, klare Verantwortlichkeiten und deterministische
-          Logik sind entscheidend für stabile Systeme.
+          Skalierbare Systeme entstehen nicht durch maximale Parallelität,
+          sondern durch klare Laststeuerung, deterministische Abläufe und gute
+          Beobachtbarkeit. Stabilität ist eine Architekturentscheidung, kein
+          Nebeneffekt.
         </p>
       </section>
     </main>

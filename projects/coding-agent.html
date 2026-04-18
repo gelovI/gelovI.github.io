@@ -23,8 +23,8 @@
         <h1>CodingAgent</h1>
 
         <p class="hero-text">
-          Rebuilt coding agent with semantic long-term memory, modular tool
-          architecture, and clear layer separation for context-aware assistance.
+          Modular agent architecture with semantic long-term memory and clear
+          separation between orchestration, tooling, and knowledge layers.
         </p>
 
         <div class="hero-buttons">
@@ -47,20 +47,18 @@
       <section class="section">
         <h2>Overview</h2>
         <p>
-          CodingAgent is a newly designed agent architecture intended to support
-          code, architecture, and project-related questions. The goal was to
-          move beyond the limitations of purely prompt-based assistants and make
-          persistent semantic context usable over time.
+          CodingAgent is a rebuilt architecture for context-aware assistance in
+          code and system design tasks. It combines LLM capabilities with
+          persistent context and structured tool interaction.
         </p>
       </section>
 
       <section class="section">
         <h2>Problem</h2>
         <p>
-          Developers frequently switch between IDEs, documentation,
-          architecture notes, and external tools. Traditional LLM assistants
-          quickly lose project context, especially in larger codebases,
-          refactoring tasks, and long-running technical discussions.
+          Traditional LLM assistants quickly lose context in larger projects. As
+          a result, they struggle with architecture-level reasoning,
+          long-running tasks, and consistent understanding across sessions.
         </p>
       </section>
 
@@ -71,32 +69,32 @@
           <div class="card stack-card">
             <h3>Tool Mode / Knowledge Mode</h3>
             <p>
-              The agent logic clearly separates operational tool execution from
-              knowledge-based context retrieval and semantic search.
+              The agent separates tool execution from semantic context usage,
+              enabling more structured and predictable behavior.
             </p>
           </div>
 
           <div class="card stack-card">
             <h3>Vector-Based Long-Term Memory</h3>
             <p>
-              Project knowledge is stored semantically, making relevant context
-              retrievable over longer time spans.
+              Project knowledge is stored semantically, allowing relevant
+              information to be retrieved and reused over time.
             </p>
           </div>
 
           <div class="card stack-card">
-            <h3>Clear Layer Structure</h3>
+            <h3>Layered Architecture</h3>
             <p>
-              UI, orchestrator, LLM client, memory service, and tool system are
-              intentionally separated to ensure maintainability and scalability.
+              UI, orchestration, LLM client, memory, and tooling are clearly
+              separated to improve maintainability and extensibility.
             </p>
           </div>
 
           <div class="card stack-card">
-            <h3>Modular Tool Registry</h3>
+            <h3>Modular Tool System</h3>
             <p>
-              New tools for analysis, file operations, and indexing can be added
-              in a structured way without destabilizing the core agent logic.
+              New tools can be integrated in a structured way without increasing
+              system complexity or coupling.
             </p>
           </div>
         </div>
@@ -115,9 +113,8 @@
         </ul>
 
         <p style="margin-top: 16px">
-          The main focus was building a robust agent architecture that does more
-          than generate answers: it preserves context over time and supports
-          project-related technical reasoning in a more structured way.
+          The focus is on building an agent that remains useful over time by
+          combining structured architecture with persistent semantic context.
         </p>
       </section>
 
@@ -126,11 +123,17 @@
 
         <div class="projects-grid">
           <div class="project-card card">
-            <img src="../assets/images/coding_agent1.png" class="project-image" />
+            <img
+              src="../assets/images/coding_agent1.png"
+              class="project-image"
+            />
           </div>
 
           <div class="project-card card">
-            <img src="../assets/images/coding_agent2.png" class="project-image" />
+            <img
+              src="../assets/images/coding_agent2.png"
+              class="project-image"
+            />
           </div>
         </div>
       </section>
@@ -138,20 +141,18 @@
       <section class="section">
         <h2>Challenges</h2>
         <p>
-          The biggest challenge was designing the agent not only to work
-          functionally, but to remain architecturally sustainable. In
-          particular, the separation between prompting, memory, orchestration,
-          and tooling was crucial for long-term scalability and maintainability.
+          The main challenge was designing an agent that scales architecturally,
+          not just functionally. Clear separation between prompting, memory,
+          orchestration, and tooling was essential.
         </p>
       </section>
 
       <section class="section">
         <h2>Learnings</h2>
         <p>
-          Intelligent assistant systems need more than a capable model. They
-          become truly useful only when context, tooling, and system
-          architecture work together cleanly. Persistent semantic context is a
-          major leverage point in that process.
+          Useful assistant systems require more than a strong model. Long-term
+          value comes from combining context, architecture, and tooling into a
+          coherent system.
         </p>
       </section>
     </main>

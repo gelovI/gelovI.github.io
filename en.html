@@ -32,9 +32,9 @@
         <p class="eyebrow">Kotlin • Android • Jetpack Compose • Desktop</p>
         <h1>Hi, I'm Ivan Gelov</h1>
         <p class="hero-text">
-          I build modern Android and desktop applications with Kotlin, Jetpack
-          Compose, and a strong focus on architecture, performance, and clean
-          state management.
+          I build Android, desktop, and backend applications with Kotlin,
+          focusing on robust architecture, consistent data flows, and
+          maintainable systems.
         </p>
         <div class="hero-buttons">
           <a class="btn btn-primary" href="#projects">My Projects</a>
@@ -54,20 +54,19 @@
       <section id="about" class="section">
         <h2>About</h2>
         <p>
-          I specialize in application development with Kotlin and build software
-          that not only looks polished, but is also implemented with clean
-          technical architecture. I am particularly interested in offline-first
-          systems, modular structures, local persistence, API integration, and
-          production-oriented application design.
+          I specialize in Kotlin-based development across Android, desktop, and
+          backend systems. My main interests include offline-first
+          architectures, synchronization, local persistence, system design, and
+          integrating intelligent features into real-world applications.
         </p>
       </section>
 
       <section id="projects" class="section">
         <h2>Projects</h2>
         <p>
-          A selection of my projects with a focus on scalable architecture,
-          offline-first systems, Android and desktop development, and
-          production-ready technical concepts.
+          A selection of projects covering system architecture, offline-first
+          synchronization, Android development, desktop applications, and
+          AI-driven software concepts.
         </p>
 
         <div class="projects-grid">
@@ -89,12 +88,13 @@
               <p class="project-subtitle">
                 Kotlin, Ktor, PostgreSQL, Prometheus, Grafana, k6
               </p>
+
               <p class="project-description">
-                Architecture concept for a reservation-oriented platform under
-                high load. The focus was on backpressure instead of failures,
-                consistent locking, idempotent requests, sync/async separation,
-                and observability-first in order to handle race conditions,
-                database bottlenecks, and load spikes in a controlled way.
+                Architecture concept for a high-load reservation platform
+                focused on controlled load handling, consistency, and
+                observability. Built with queueing, deterministic locking,
+                idempotent requests, and a clear separation between synchronous
+                and asynchronous processing.
               </p>
 
               <ul class="tags">
@@ -131,14 +131,15 @@
               <p class="project-label">AI / Tooling</p>
               <h3>CodingAgent – Rebuild</h3>
               <p class="project-subtitle">
-                Agent architecture with vector memory and modular tool registry
+                Semantic context storage and modular agent architecture
               </p>
+
               <p class="project-description">
-                Rebuilt coding agent with a clear separation between tool mode
-                and knowledge mode. The system combines a modular agent core,
-                semantic long-term storage via vector database, and a clean
-                layered structure consisting of UI, orchestrator, LLM client,
-                memory service, and tool system.
+                Rebuilt coding agent designed for handling code and
+                architecture-related tasks. The focus lies on persistent
+                semantic context, a modular tool system, and a clearly separated
+                structure between UI, orchestration, LLM client, and memory
+                layer.
               </p>
 
               <ul class="tags">
@@ -177,14 +178,14 @@
               <p class="project-label">Offline-First / Sync</p>
               <h3>Ops – Offline-First Sync Platform</h3>
               <p class="project-subtitle">
-                Reliable synchronization for real-world network conditions
+                Sync architecture for unstable networks and multi-device usage
               </p>
+
               <p class="project-description">
-                Sync architecture for unstable networks and multi-device
-                scenarios. Built with a local database, outbox pattern,
-                idempotent push, cursor-based pull, persistent server cursor,
-                and LWW conflict strategy. The system was extended with
-                integrated sync debug and observability features.
+                Offline-first synchronization system using a local database,
+                outbox pattern, idempotent push, and cursor-based pull. Designed
+                to maintain consistent state across unreliable connections,
+                repeated requests, and concurrent updates.
               </p>
 
               <ul class="tags">
@@ -224,14 +225,14 @@
               <p class="project-label">Android App</p>
               <h3>DienstPlan – Mobile Workforce Tracking</h3>
               <p class="project-subtitle">
-                Reactive MVVM stack with deterministic domain logic
+                Android app for shift tracking and time-based analytics
               </p>
+
               <p class="project-description">
-                Android application for mobile work time and shift overview with
-                StateFlow-based UI synchronization, persistent SQLite structure,
-                versioned database migrations, and domain-driven time logic.
-                Extended with reactive month navigation and canvas-based
-                statistics visualization.
+                Mobile application for managing work schedules and time tracking
+                with deterministic domain logic, StateFlow-based UI
+                synchronization, and persistent SQLite storage. Includes
+                calendar navigation and canvas-based data visualization.
               </p>
 
               <ul class="tags">
@@ -263,14 +264,14 @@
                 Organon – Local AI Integration into a Project Management System
               </h3>
               <p class="project-subtitle">
-                Clean Architecture, SQLDelight, local LLM orchestration
+                Local AI integration with Clean Architecture and SQLDelight
               </p>
+
               <p class="project-description">
-                Project management system with local AI integration and a strong
-                focus on privacy by design. The architecture combines Clean
-                Architecture, RBAC, SQLDelight persistence, and local LLM
-                execution to derive concrete system changes in the use case and
-                repository layers from prompts via intent parsing.
+                Project management system with locally executed LLMs and a
+                privacy-first design. Prompts are transformed into structured
+                system actions via intent parsing and integrated directly into
+                use case and persistence layers.
               </p>
 
               <ul class="tags">
@@ -299,14 +300,14 @@
               <p class="project-label">Desktop App</p>
               <h3>Utility Cost Manager – Administration and Billing</h3>
               <p class="project-subtitle">
-                Kotlin, Compose Desktop, SQLite, Exposed ORM
+                Compose Desktop, SQLite, Exposed ORM
               </p>
+
               <p class="project-description">
-                Native desktop application for structured utility cost
-                management with a local SQLite database, type-safe data access
-                through Exposed ORM, and a modular architecture for user,
-                meter-data, and billing logic. It also includes dynamic live
-                calculations and PDF generation for archive-ready billing.
+                Desktop application for structured cost management and billing.
+                Focused on type-safe data access, modular business logic,
+                real-time calculations, and PDF generation for archival-ready
+                reports.
               </p>
 
               <ul class="tags">
@@ -345,12 +346,13 @@
                 DienstPlan – Rule-Based Shift Planning and Work Time Analysis
               </h3>
               <p class="project-subtitle">
-                Rule-based domain engine, persistent desktop DB, PDF export
+                Shift planning, time calculation, and PDF export
               </p>
+
               <p class="project-description">
-                Desktop application for structured shift planning and work time
-                analysis. The focus was on deterministic time calculation,
-                reactive state architecture, versioned database migrations, and
+                Desktop solution for rule-based scheduling and working time
+                analysis. Core features include deterministic calculations,
+                reactive state handling, versioned database migrations, and
                 print-optimized PDF generation.
               </p>
 
@@ -380,13 +382,13 @@
               <p class="project-label">Android Game</p>
               <h3>DotLogic – Logic Puzzle with Path Connections</h3>
               <p class="project-subtitle">
-                Canvas rendering, pointer input, testable game logic
+                Android puzzle game with canvas rendering and testable logic
               </p>
+
               <p class="project-description">
-                Android puzzle game with a deterministic engine, data-driven
-                level system, and high-performance board rendering via Compose
-                Canvas. Extended with a pointer-input pipeline, StateFlow-based
-                state management, and serializable level structures.
+                Logic-based puzzle game with a data-driven level system, Compose
+                canvas rendering, and touch-based input handling. The core game
+                logic is designed to be UI-independent and fully testable.
               </p>
 
               <ul class="tags">
@@ -415,14 +417,14 @@
               <p class="project-label">Android App</p>
               <h3>RRMed – Blood Pressure and Therapy Tracking</h3>
               <p class="project-subtitle">
-                MVVM, structured data modeling, offline-first storage
+                Android app for health tracking and structured data input
               </p>
+
               <p class="project-description">
-                Android application for structured recording of blood pressure
-                values, therapy information, and measurement history.
-                Implemented with reactive state management, testable validation
-                logic, and a clear separation between UI, business logic, and
-                persistence.
+                Application for tracking blood pressure, therapy data, and
+                measurement history. Focused on structured data modeling,
+                validation logic, and clear separation between UI, business
+                logic, and persistence.
               </p>
 
               <ul class="tags">
@@ -459,13 +461,13 @@
               <p class="project-label">Android Game</p>
               <h3>WordKings – Intelligent Word Puzzle Game</h3>
               <p class="project-subtitle">
-                Jetpack Compose, Room, DataStore, data-driven game system
+                Word game with persistent state and modular game system
               </p>
+
               <p class="project-description">
-                Native Android app with MVVM architecture, local persistence,
-                and a modular game system. The focus was on persistent game
-                states, expandable dictionary structures, and animated UI
-                feedback.
+                Native Android game with persistent progress, extendable
+                dictionary system, and modular game architecture. Includes
+                animated UI feedback and reusable game logic components.
               </p>
 
               <ul class="tags">
@@ -496,7 +498,7 @@
         <div class="stack-grid">
           <div class="card stack-card">
             <h3>Languages</h3>
-            <p>Kotlin, SQL, TypeScript (in progress)</p>
+            <p>Kotlin, SQL, TypeScript</p>
           </div>
           <div class="card stack-card">
             <h3>Android</h3>
@@ -506,11 +508,16 @@
           </div>
           <div class="card stack-card">
             <h3>Desktop</h3>
-            <p>Kotlin Desktop, Compose Multiplatform, local data processing</p>
+            <p>
+              Compose Desktop, Compose Multiplatform, SQLite, Exposed,
+              SQLDelight
+            </p>
           </div>
           <div class="card stack-card">
             <h3>Tools</h3>
-            <p>Git, GitHub, Android Studio, VS Code, Gradle</p>
+            <p>
+              Git, GitHub, Android Studio, VS Code, Gradle, Prometheus, Grafana
+            </p>
           </div>
         </div>
       </section>
@@ -518,7 +525,7 @@
       <section id="contact" class="section">
         <h2>Contact</h2>
         <div class="card contact-card">
-          <p>You can reach me here:</p>
+          <p>Contact and further information:</p>
           <p>
             <strong>GitHub:</strong>
             <a

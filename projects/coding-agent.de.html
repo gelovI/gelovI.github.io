@@ -23,9 +23,8 @@
         <h1>CodingAgent</h1>
 
         <p class="hero-text">
-          Neu konzipierter Coding-Agent mit semantischem Langzeitgedächtnis,
-          modularer Tool-Architektur und klarer Layer-Trennung für
-          kontextbasierte Assistenz.
+          Modulare Agenten-Architektur mit semantischem Langzeitkontext und
+          klarer Trennung zwischen Orchestrierung, Tooling und Wissensschicht.
         </p>
 
         <div class="hero-buttons">
@@ -48,20 +47,20 @@
       <section class="section">
         <h2>Überblick</h2>
         <p>
-          CodingAgent ist eine neu aufgebaute Agenten-Architektur zur
-          Unterstützung bei Code-, Architektur- und Projektfragen. Ziel war es,
-          die Grenzen klassischer, rein promptbasierter LLM-Assistenten zu
-          überwinden und persistenten, semantischen Kontext nutzbar zu machen.
+          CodingAgent ist eine neu aufgebaute Architektur für kontextbasierte
+          Assistenz bei Code-, Architektur- und Projektfragen. Im Fokus stand
+          die Verbindung aus LLM-Nutzung, persistentem Kontext und
+          strukturiertem Tool-Zugriff.
         </p>
       </section>
 
       <section class="section">
         <h2>Problemstellung</h2>
         <p>
-          Entwickler wechseln häufig zwischen IDE, Dokumentation,
-          Architektur-Notizen und externen Tools. Klassische LLM-Assistenten
-          verlieren dabei schnell den Projektkontext, insbesondere bei
-          größeren Codebasen, Refactorings und langfristigen Fragestellungen.
+          Klassische LLM-Assistenten verlieren bei größeren Projekten schnell
+          den Zusammenhang zwischen Code, Architekturentscheidungen und bereits
+          bekanntem Kontext. Dadurch sinkt ihre Nützlichkeit bei komplexeren
+          technischen Aufgaben.
         </p>
       </section>
 
@@ -72,7 +71,7 @@
           <div class="card stack-card">
             <h3>Tool-Mode / Knowledge-Mode</h3>
             <p>
-              Die Agentenlogik trennt operative Tool-Aufrufe klar von
+              Die Agentenlogik trennt operative Tool-Ausführung bewusst von
               wissensbasierter Kontextnutzung und semantischer Suche.
             </p>
           </div>
@@ -80,25 +79,27 @@
           <div class="card stack-card">
             <h3>Vektorbasiertes Langzeitgedächtnis</h3>
             <p>
-              Projektwissen wird semantisch gespeichert, um relevante
-              Informationen über längere Zeiträume abrufbar zu halten.
+              Projektwissen wird semantisch gespeichert, damit relevante
+              Informationen über längere Zeiträume hinweg gezielt
+              wiederverwendbar bleiben.
             </p>
           </div>
 
           <div class="card stack-card">
             <h3>Klare Layer-Struktur</h3>
             <p>
-              UI, Orchestrator, LLM-Client, Memory-Service und Tool-System sind
-              bewusst voneinander getrennt, um Wartbarkeit und Erweiterbarkeit
-              sicherzustellen.
+              UI, Orchestrierung, LLM-Anbindung, Memory-Service und Tool-System
+              sind klar voneinander getrennt, um Wartbarkeit und Erweiterbarkeit
+              zu verbessern.
             </p>
           </div>
 
           <div class="card stack-card">
             <h3>Modulare Tool-Registry</h3>
             <p>
-              Neue Tools für Analyse, Dateioperationen oder Indexierung können
-              strukturiert ergänzt werden, ohne die Kernlogik zu destabilisieren.
+              Analyse-, Datei- und Hilfstools lassen sich strukturiert
+              erweitern, ohne die Kernlogik des Agents unnötig zu
+              verkomplizieren.
             </p>
           </div>
         </div>
@@ -117,9 +118,10 @@
         </ul>
 
         <p style="margin-top: 16px">
-          Der Schwerpunkt lag auf einer robusten Agentenarchitektur, die nicht
-          nur Antworten generiert, sondern Kontext langfristig nutzbar macht und
-          projektbezogene Fragen strukturierter beantworten kann.
+          Der Schwerpunkt lag auf einer Architektur, die kontextbasierte
+          Assistenz langfristig tragfähig macht – nicht nur durch Modellaufrufe,
+          sondern durch saubere Systemgrenzen und persistenten semantischen
+          Kontext.
         </p>
       </section>
 
@@ -128,11 +130,17 @@
 
         <div class="projects-grid">
           <div class="project-card card">
-            <img src="../assets/images/coding_agent1.png" class="project-image" />
+            <img
+              src="../assets/images/coding_agent1.png"
+              class="project-image"
+            />
           </div>
 
           <div class="project-card card">
-            <img src="../assets/images/coding_agent2.png" class="project-image" />
+            <img
+              src="../assets/images/coding_agent2.png"
+              class="project-image"
+            />
           </div>
         </div>
       </section>
@@ -140,20 +148,19 @@
       <section class="section">
         <h2>Herausforderungen</h2>
         <p>
-          Die größte Herausforderung bestand darin, den Agenten nicht nur
-          funktional, sondern architektonisch nachhaltig aufzubauen. Besonders
-          wichtig war die Trennung zwischen Prompting, Memory, Orchestrierung
-          und Tools, damit der Agent skalierbar und wartbar bleibt.
+          Die Hauptschwierigkeit bestand darin, einen Agenten zu entwerfen, der
+          nicht nur funktional antwortet, sondern architektonisch sauber wächst.
+          Besonders wichtig war die klare Trennung zwischen Prompting,
+          Kontextspeicher, Orchestrierung und Tooling.
         </p>
       </section>
 
       <section class="section">
         <h2>Learnings</h2>
         <p>
-          Intelligente Assistenzsysteme brauchen mehr als ein gutes Modell.
-          Langfristig hilfreich werden sie erst dann, wenn Kontext, Tooling und
-          Systemarchitektur sauber zusammenspielen. Persistenter semantischer
-          Kontext ist dabei ein zentraler Hebel.
+          Nützliche Assistenzsysteme entstehen nicht allein durch ein starkes
+          Modell. Erst das Zusammenspiel aus Kontext, Architektur und Tooling
+          macht sie in realen Entwicklungsumgebungen dauerhaft wertvoll.
         </p>
       </section>
     </main>
