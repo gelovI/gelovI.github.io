@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandbox Runner</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <header class="hero" style="min-height: auto; padding-bottom: 40px">
+      <nav class="nav">
+        <a href="../index.html" class="btn btn-secondary">
+          ← Back
+        </a>
+
+        <div class="lang-toggle">
+          <a href="sandbox-runner.de.html" class="lang-link">
+            DE
+          </a>
+
+          <a href="sandbox-runner.html" class="lang-link active">
+            EN
+          </a>
+        </div>
+      </nav>
+
+      <section class="hero-content">
+        <p class="eyebrow">Infrastructure / Full-Stack</p>
+
+        <h1>Sandbox Runner</h1>
+
+        <p class="hero-text">
+          Secure multi-language code execution platform with
+          Docker isolation, Kotlin backend architecture and
+          a modern full-stack dashboard.
+        </p>
+
+        <div class="hero-buttons">
+          <a
+            href="https://github.com/gelovI/sandbox-runner"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="../index.html#projects"
+            class="btn btn-secondary"
+          >
+            All Projects
+          </a>
+        </div>
+      </section>
+    </header>
+
+    <main class="container">
+
+      <section class="section">
+        <h2>Overview</h2>
+
+        <p>
+          Sandbox Runner is a full-stack platform for securely
+          executing code inside isolated Docker containers.
+          The platform supports Python, JavaScript, Kotlin,
+          Java and Go.
+        </p>
+
+        <p>
+          The project focused heavily on infrastructure
+          engineering, container orchestration, runtime
+          isolation and clean backend architecture using
+          Kotlin and Ktor.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Problem Statement</h2>
+
+        <p>
+          Code execution systems require strong isolation,
+          runtime control and stable resource limitations
+          in order to safely execute untrusted or faulty code.
+        </p>
+
+        <p>
+          The goal was to build a modern sandbox architecture
+          with containerized infrastructure and persistent
+          execution storage.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Architecture Approach</h2>
+
+        <div class="stack-grid">
+
+          <div class="card stack-card">
+            <h3>Docker Runtime Isolation</h3>
+
+            <p>
+              Every execution runs inside an isolated Docker
+              container with disabled networking, CPU/memory
+              limits and PID restrictions.
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <h3>Kotlin + Ktor Backend</h3>
+
+            <p>
+              The backend is built with Kotlin and Ktor
+              using a clearly separated API, domain,
+              infrastructure and persistence architecture.
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <h3>Persistent Storage</h3>
+
+            <p>
+              All executions including stdout, stderr,
+              runtime metrics and status information
+              are stored in PostgreSQL.
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <h3>Modern Frontend</h3>
+
+            <p>
+              The React frontend integrates Monaco Editor,
+              runtime statistics, run history and detailed
+              execution views.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Technical Features</h2>
+
+        <ul class="tags">
+          <li>Kotlin</li>
+          <li>Ktor</li>
+          <li>Docker</li>
+          <li>PostgreSQL</li>
+          <li>React</li>
+          <li>Monaco Editor</li>
+          <li>Sandbox Isolation</li>
+          <li>Docker Compose</li>
+        </ul>
+
+        <p style="margin-top: 16px">
+          A major focus of the project was combining secure
+          container isolation, clean backend architecture
+          and modern full-stack engineering practices.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Dashboard & Execution UI</h2>
+
+        <div class="projects-grid">
+
+          <div class="projects-grid">
+
+          <div class="project-card card">
+            <img
+              src="../assets/images/sandbox1.png"
+              class="project-image"
+            />
+          </div>
+
+          <div class="project-card card">
+            <img
+              src="../assets/images/sandbox1d.png"
+              class="project-image"
+            />
+          </div>
+
+          <div class="project-card card">
+            <img
+              src="../assets/images/sandbox2.png"
+              class="project-image"
+            />
+          </div>
+
+          <div class="project-card card">
+            <img
+              src="../assets/images/sandbox2b.png"
+              class="project-image"
+            />
+          </div>
+
+          <div class="project-card card">
+            <img
+              src="../assets/images/sandbox3.png"
+              class="project-image"
+            />
+          </div>
+
+          <div class="project-card card">
+            <img
+              src="../assets/images/sandbox3c.png"
+              class="project-image"
+            />
+          </div>
+
+          <div class="project-card card">
+            <img
+              src="../assets/images/sandbox4.png"
+              class="project-image"
+            />
+          </div>
+
+          <div class="project-card card">
+            <img
+              src="../assets/images/sandbox4e.png"
+              class="project-image"
+            />
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Challenges</h2>
+
+        <p>
+          The biggest challenge was implementing reliable,
+          secure and performant containerized code execution.
+        </p>
+
+        <p>
+          Runtime isolation, Docker orchestration,
+          resource limits and language-specific execution
+          flows were particularly complex parts of the system.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Learnings</h2>
+
+        <p>
+          The project highlighted how important clean
+          infrastructure boundaries, controlled runtime
+          environments and robust architecture are when
+          building executable systems.
+        </p>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Ivan Gelov</p>
+    </footer>
+  </body>
+</html>

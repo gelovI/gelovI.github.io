@@ -9,6 +9,7 @@
       content="Portfolio of Ivan Gelov – Kotlin, Android, Jetpack Compose and Desktop Apps."
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="640c1226-3f95-484b-b801-33a444ae0007"></script>
   </head>
   <body>
     <header class="hero">
@@ -112,6 +113,60 @@
                 <a href="projects/ticketsystem.html" class="btn btn-secondary"
                   >Details</a
                 >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card">
+            <div
+              class="project-image-wrapper"
+              data-images="assets/images/sandbox1.png,assets/images/sandbox1d.png,assets/images/sandbox2.png,assets/images/sandbox2b.png,assets/images/sandbox3.png,assets/images/sandbox3c.png,assets/images/sandbox4.png,assets/images/sandbox4e.png"
+              data-overlay="Click to enlarge"
+            >
+              <img
+                src="assets/images/sandbox1.png"
+                alt="Sandbox Runner Screenshot"
+                class="project-image"
+              />
+            </div>
+
+            <div class="project-content">
+              <p class="project-label">Infrastructure / Full-Stack</p>
+
+              <h3>Sandbox Runner</h3>
+
+              <p class="project-subtitle">
+                Docker-based multi-language code execution platform
+              </p>
+
+              <p class="project-description">
+                Full-stack sandbox system for securely executing Python,
+                JavaScript, Kotlin, Java and Go inside isolated Docker
+                containers. Focused on runtime isolation, per-language resource
+                limits, modern architecture and containerized infrastructure.
+              </p>
+
+              <ul class="tags">
+                <li>Kotlin</li>
+                <li>Docker</li>
+                <li>PostgreSQL</li>
+                <li>React</li>
+              </ul>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/gelovI/sandbox-runner"
+                  class="btn btn-primary"
+                >
+                  GitHub
+                </a>
+
+                <a
+                  href="projects/sandbox-runner-en.html"
+                  class="btn btn-secondary"
+                >
+                  Details
+                </a>
               </div>
             </div>
           </article>
@@ -505,28 +560,51 @@
 
       <section id="stack" class="section">
         <h2>Tech Stack</h2>
+
         <div class="stack-grid">
           <div class="card stack-card">
             <h3>Languages</h3>
-            <p>Kotlin, SQL, TypeScript</p>
-          </div>
-          <div class="card stack-card">
-            <h3>Android</h3>
             <p>
-              Jetpack Compose, Navigation, Room, DataStore, Coroutines, Flow
+              Kotlin, Java, Go, Python, JavaScript, TypeScript, SQL, HTML, CSS
             </p>
           </div>
+
           <div class="card stack-card">
-            <h3>Desktop</h3>
+            <h3>Backend</h3>
             <p>
-              Compose Desktop, Compose Multiplatform, SQLite, Exposed,
-              SQLDelight
+              Ktor, Exposed ORM, Flyway, PostgreSQL, Docker CLI Integration,
+              REST APIs, Clean Architecture
             </p>
           </div>
+
+          <div class="card stack-card">
+            <h3>Frontend</h3>
+            <p>
+              React, Vite, Tailwind CSS, Monaco Editor, Lucide Icons, Responsive
+              UI
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <h3>Infrastructure</h3>
+            <p>
+              Docker, Docker Compose, Nginx, Container Isolation, Resource
+              Limits, Linux Security Options
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <h3>Security</h3>
+            <p>
+              Sandbox Execution, CPU Limits, Memory Limits, PID Limits,
+              no-new-privileges, Capability Dropping
+            </p>
+          </div>
+
           <div class="card stack-card">
             <h3>Tools</h3>
             <p>
-              Git, GitHub, Android Studio, VS Code, Gradle, Prometheus, Grafana
+              Git, GitHub, IntelliJ IDEA, VS Code, Gradle, npm, Docker Desktop
             </p>
           </div>
         </div>
