@@ -10,18 +10,12 @@
   <body>
     <header class="hero" style="min-height: auto; padding-bottom: 40px">
       <nav class="nav">
-        <a href="../index.html" class="btn btn-secondary">
-          ← Back
-        </a>
+        <a href="../index.html" class="btn btn-secondary"> ← Back </a>
 
         <div class="lang-toggle">
-          <a href="sandbox-runner.de.html" class="lang-link">
-            DE
-          </a>
+          <a href="sandbox-runner.de.html" class="lang-link"> DE </a>
 
-          <a href="sandbox-runner.html" class="lang-link active">
-            EN
-          </a>
+          <a href="sandbox-runner.html" class="lang-link active"> EN </a>
         </div>
       </nav>
 
@@ -31,9 +25,8 @@
         <h1>Sandbox Runner</h1>
 
         <p class="hero-text">
-          Secure multi-language code execution platform with
-          Docker isolation, Kotlin backend architecture and
-          a modern full-stack dashboard.
+          Secure multi-language code execution platform with Docker isolation,
+          Kotlin backend architecture and a modern full-stack dashboard.
         </p>
 
         <div class="hero-buttons">
@@ -46,10 +39,7 @@
             GitHub
           </a>
 
-          <a
-            href="../index.html#projects"
-            class="btn btn-secondary"
-          >
+          <a href="../index.html#projects" class="btn btn-secondary">
             All Projects
           </a>
         </div>
@@ -57,22 +47,21 @@
     </header>
 
     <main class="container">
-
       <section class="section">
         <h2>Overview</h2>
 
         <p>
-          Sandbox Runner is a full-stack platform for securely
-          executing code inside isolated Docker containers.
-          The platform supports Python, JavaScript, Kotlin,
+          Sandbox Runner is a distributed multi-language sandbox execution
+          platform for securely running untrusted code inside isolated Docker
+          containers. Supported languages include Python, JavaScript, Kotlin,
           Java and Go.
         </p>
 
         <p>
-          The project focused heavily on infrastructure
-          engineering, container orchestration, runtime
-          isolation and clean backend architecture using
-          Kotlin and Ktor.
+          The project focused on platform engineering, distributed systems,
+          runtime isolation, horizontally scalable worker architectures,
+          security hardening and modern full-stack development using Kotlin,
+          Redis, Docker and React.
         </p>
       </section>
 
@@ -80,15 +69,15 @@
         <h2>Problem Statement</h2>
 
         <p>
-          Code execution systems require strong isolation,
-          runtime control and stable resource limitations
-          in order to safely execute untrusted or faulty code.
+          Secure code execution systems require strong isolation, controlled
+          runtime environments, scalable worker systems and robust resource
+          limits to safely execute untrusted code.
         </p>
 
         <p>
-          The goal was to build a modern sandbox architecture
-          with containerized infrastructure and persistent
-          execution storage.
+          The goal was to build a modern distributed sandbox platform featuring
+          Docker isolation, Redis-based async queues, live streaming and
+          horizontally scalable infrastructure.
         </p>
       </section>
 
@@ -96,47 +85,41 @@
         <h2>Architecture Approach</h2>
 
         <div class="stack-grid">
-
           <div class="card stack-card">
-            <h3>Docker Runtime Isolation</h3>
+            <h3>Distributed Worker Architecture</h3>
 
             <p>
-              Every execution runs inside an isolated Docker
-              container with disabled networking, CPU/memory
-              limits and PID restrictions.
+              Runs are processed asynchronously through Redis queues and
+              executed by horizontally scalable worker instances.
             </p>
           </div>
 
           <div class="card stack-card">
-            <h3>Kotlin + Ktor Backend</h3>
+            <h3>Docker Sandbox Isolation</h3>
 
             <p>
-              The backend is built with Kotlin and Ktor
-              using a clearly separated API, domain,
-              infrastructure and persistence architecture.
+              Every execution runs inside isolated Docker containers with
+              disabled networking, runtime limits and security hardening.
             </p>
           </div>
 
           <div class="card stack-card">
-            <h3>Persistent Storage</h3>
+            <h3>Live Runtime Streaming</h3>
 
             <p>
-              All executions including stdout, stderr,
-              runtime metrics and status information
-              are stored in PostgreSQL.
+              stdout, stderr and status updates are streamed live to the
+              frontend using Server-Sent Events (SSE).
             </p>
           </div>
 
           <div class="card stack-card">
-            <h3>Modern Frontend</h3>
+            <h3>Worker Observability</h3>
 
             <p>
-              The React frontend integrates Monaco Editor,
-              runtime statistics, run history and detailed
-              execution views.
+              The platform includes queue statistics, worker monitoring, active
+              job tracking and dead-letter observability.
             </p>
           </div>
-
         </div>
       </section>
 
@@ -147,17 +130,21 @@
           <li>Kotlin</li>
           <li>Ktor</li>
           <li>Docker</li>
+          <li>Redis</li>
           <li>PostgreSQL</li>
           <li>React</li>
+          <li>TypeScript</li>
           <li>Monaco Editor</li>
+          <li>SSE Streaming</li>
           <li>Sandbox Isolation</li>
-          <li>Docker Compose</li>
+          <li>Distributed Workers</li>
+          <li>Security Hardening</li>
         </ul>
 
         <p style="margin-top: 16px">
-          A major focus of the project was combining secure
-          container isolation, clean backend architecture
-          and modern full-stack engineering practices.
+          A key focus was combining secure runtime isolation, asynchronous
+          worker architecture, containerized infrastructure and modern
+          full-stack development.
         </p>
       </section>
 
@@ -165,65 +152,33 @@
         <h2>Dashboard & Execution UI</h2>
 
         <div class="projects-grid">
-
-          <div class="projects-grid">
-
           <div class="project-card card">
             <img
-              src="../assets/images/sandbox1.png"
+              src="../assets/images/sandboxBild1.png"
               class="project-image"
             />
           </div>
 
           <div class="project-card card">
             <img
-              src="../assets/images/sandbox1d.png"
+              src="../assets/images/sandboxBild3.png"
               class="project-image"
             />
           </div>
 
           <div class="project-card card">
             <img
-              src="../assets/images/sandbox2.png"
+              src="../assets/images/sandboxBild6.png"
               class="project-image"
             />
           </div>
 
           <div class="project-card card">
             <img
-              src="../assets/images/sandbox2b.png"
+              src="../assets/images/sandboxBild5.png"
               class="project-image"
             />
           </div>
-
-          <div class="project-card card">
-            <img
-              src="../assets/images/sandbox3.png"
-              class="project-image"
-            />
-          </div>
-
-          <div class="project-card card">
-            <img
-              src="../assets/images/sandbox3c.png"
-              class="project-image"
-            />
-          </div>
-
-          <div class="project-card card">
-            <img
-              src="../assets/images/sandbox4.png"
-              class="project-image"
-            />
-          </div>
-
-          <div class="project-card card">
-            <img
-              src="../assets/images/sandbox4e.png"
-              class="project-image"
-            />
-          </div>
-
         </div>
       </section>
 
@@ -231,14 +186,15 @@
         <h2>Challenges</h2>
 
         <p>
-          The biggest challenge was implementing reliable,
-          secure and performant containerized code execution.
+          The biggest challenge was combining secure containerized code
+          execution with asynchronous distributed execution, live streaming and
+          runtime control in a reliable way.
         </p>
 
         <p>
-          Runtime isolation, Docker orchestration,
-          resource limits and language-specific execution
-          flows were particularly complex parts of the system.
+          Particularly complex areas included security hardening, worker
+          orchestration, container lifecycle management, cancellation flows and
+          language-specific runtime profiles.
         </p>
       </section>
 
@@ -246,13 +202,11 @@
         <h2>Learnings</h2>
 
         <p>
-          The project highlighted how important clean
-          infrastructure boundaries, controlled runtime
-          environments and robust architecture are when
-          building executable systems.
+          The project especially demonstrated the importance of clean
+          infrastructure boundaries, security hardening, event-driven
+          architectures and robust worker systems for modern runtime platforms.
         </p>
       </section>
-
     </main>
 
     <footer class="footer">

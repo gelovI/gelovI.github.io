@@ -9,7 +9,11 @@
       content="Portfolio of Ivan Gelov – Kotlin, Android, Jetpack Compose and Desktop Apps."
     />
     <link rel="stylesheet" href="style.css" />
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="640c1226-3f95-484b-b801-33a444ae0007"></script>
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="640c1226-3f95-484b-b801-33a444ae0007"
+    ></script>
   </head>
   <body>
     <header class="hero">
@@ -120,37 +124,42 @@
           <article class="project-card card">
             <div
               class="project-image-wrapper"
-              data-images="assets/images/sandbox1.png,assets/images/sandbox1d.png,assets/images/sandbox2.png,assets/images/sandbox2b.png,assets/images/sandbox3.png,assets/images/sandbox3c.png,assets/images/sandbox4.png,assets/images/sandbox4e.png"
+              data-images="assets/images/sandboxBild1.png,assets/images/sandboxBild3.png,assets/images/sandboxBild6.png,assets/images/sandboxBild5.png"
               data-overlay="Click to enlarge"
             >
               <img
-                src="assets/images/sandbox1.png"
+                src="assets/images/sandboxBild1.png"
                 alt="Sandbox Runner Screenshot"
                 class="project-image"
               />
             </div>
 
             <div class="project-content">
-              <p class="project-label">Infrastructure / Full-Stack</p>
+              <p class="project-label">
+                Platform Engineering / Distributed Systems
+              </p>
 
               <h3>Sandbox Runner</h3>
 
               <p class="project-subtitle">
-                Docker-based multi-language code execution platform
+                Distributed Multi-Language Sandbox Execution Platform
               </p>
 
               <p class="project-description">
-                Full-stack sandbox system for securely executing Python,
-                JavaScript, Kotlin, Java and Go inside isolated Docker
-                containers. Focused on runtime isolation, per-language resource
-                limits, modern architecture and containerized infrastructure.
+                Full-stack platform for securely executing untrusted code inside
+                isolated Docker containers using a Redis-based async queue,
+                horizontally scalable worker systems, live SSE streaming,
+                retry/DLQ architecture and runtime-specific security hardening.
+                Supports Python, JavaScript, Kotlin, Java and Go.
               </p>
 
               <ul class="tags">
                 <li>Kotlin</li>
                 <li>Docker</li>
+                <li>Redis</li>
                 <li>PostgreSQL</li>
                 <li>React</li>
+                <li>TypeScript</li>
               </ul>
 
               <div class="project-links">
