@@ -1067,3 +1067,53 @@ img {
     min-height: auto;
   }
 }
+
+.hero-visual {
+  position: relative;
+}
+
+.hero-portrait-outline {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+
+  pointer-events: none;
+}
+
+.hero-portrait-outline img {
+
+  width: 390px;
+
+  opacity: 0.65;
+
+  filter:
+    drop-shadow(0 0 25px rgba(96,165,250,.45))
+    drop-shadow(0 0 60px rgba(34,211,238,.25));
+}
+
+.hero-portrait-outline img {
+  animation: portraitFloat 8s ease-in-out infinite;
+}
+
+@keyframes portraitFloat {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hero-portrait-name {
+  text-align: center;
+  margin-top: 12px;
+
+  color: #8fd8ff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
