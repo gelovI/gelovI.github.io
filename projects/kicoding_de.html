@@ -1,0 +1,189 @@
+<!doctype html>
+
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KI Coding – Projektbasierte Lernplattform mit KI-Tutor</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <header class="hero" style="min-height: auto; padding-bottom: 40px">
+      <nav class="nav">
+        <a href="../index.html" class="btn btn-secondary">← Zurück</a>
+
+```
+    <div class="lang-toggle">
+      <a href="kicoding.de.html" class="lang-link active">DE</a>
+      <a href="kicoding.html" class="lang-link">EN</a>
+    </div>
+  </nav>
+
+  <section class="hero-content">
+    <p class="eyebrow">Full Stack / AI Education Platform</p>
+    <h1>KI Coding</h1>
+
+    <p class="hero-text">
+      Projektbasierte Coding-Lernplattform mit Workspace, Sandbox,
+      Fortschrittssystem und KI-Tutor für kontextbewusstes Lernen an
+      realen Softwareprojekten.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#" class="btn btn-primary">GitHub</a>
+      <a href="../index.html#projects" class="btn btn-secondary">
+        Alle Projekte
+      </a>
+    </div>
+  </section>
+</header>
+
+<main class="container">
+  <section class="section">
+    <h2>Überblick</h2>
+    <p>
+      KI Coding ist eine vollständige Lernplattform, bei der Nutzer
+      Programmieren nicht über isolierte Einzelaufgaben, sondern durch
+      echte, wachsende Projekte lernen. Die Plattform kombiniert
+      Projektverwaltung, mehrdateifähigen Code-Workspace, Aufgaben- und
+      Meilensteinlogik, Sandbox-Ausführung, Fortschrittstracking und einen
+      KI-gestützten Tutor.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Problemstellung</h2>
+    <p>
+      Viele Coding-Lernplattformen arbeiten mit kleinen, voneinander
+      getrennten Übungen. Dadurch fehlt häufig der Bezug zu echter
+      Softwareentwicklung: Projektstruktur, mehrere Dateien, wiederholtes
+      Refactoring, Debugging, Konsolenausgabe und langfristiger
+      Lernfortschritt. KI Coding löst dieses Problem durch einen
+      projektbasierten Ansatz mit persistenter Speicherung und
+      kontextbewusster Unterstützung.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Architekturansatz</h2>
+
+    <div class="stack-grid">
+      <div class="card stack-card">
+        <h3>Projektbasiertes Lernen</h3>
+        <p>
+          Lernende bearbeiten echte Projekte mit Dateien, Ordnern,
+          Meilensteinen und Aufgaben, statt nur isolierte Code-Snippets zu
+          lösen.
+        </p>
+      </div>
+
+      <div class="card stack-card">
+        <h3>Persistenter Workspace</h3>
+        <p>
+          Projekte, Dateien, Fortschritt, Profil, Einstellungen und
+          Tutor-Verlauf werden dauerhaft gespeichert und können später
+          wieder geöffnet werden.
+        </p>
+      </div>
+
+      <div class="card stack-card">
+        <h3>Kontextbewusster KI-Tutor</h3>
+        <p>
+          Der Tutor kennt aktuelle Aufgabe, aktive Datei, Projektstruktur,
+          Lernfortschritt und Chatverlauf und gibt gezielte Hilfe, ohne
+          komplette Lösungen vorzugeben.
+        </p>
+      </div>
+
+      <div class="card stack-card">
+        <h3>Sandbox & Validierung</h3>
+        <p>
+          Code kann direkt im Workspace ausgeführt werden. Aufgaben werden
+          über technische Checks, Konsolenausgabe und Projektdateien
+          validiert.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Technische Features</h2>
+
+    <ul class="tags">
+      <li>Kotlin</li>
+      <li>Ktor</li>
+      <li>PostgreSQL</li>
+      <li>Next.js</li>
+      <li>TypeScript</li>
+      <li>JWT Authentication</li>
+      <li>Monaco Editor</li>
+      <li>AI Tutor</li>
+      <li>Sandbox Execution</li>
+      <li>Project Import / Export</li>
+      <li>Skill Tracking</li>
+    </ul>
+
+    <p style="margin-top: 16px">
+      Die Plattform enthält Benutzerverwaltung, Login, Profil- und
+      Einstellungsdialoge, projektbasierte Templates für Kotlin und Python,
+      Fortschrittsauswertung, Suche, Command Palette, Tutor-Memory sowie
+      Import und Export von Projekten im eigenen .kicoding-Format.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Produktoberfläche</h2>
+
+    <div class="projects-grid">
+      <div class="project-card card">
+        <img src="../assets/images/ImageKiCoding1.png" class="project-image" />
+      </div>
+
+      <div class="project-card card">
+        <img src="../assets/images/ImageKiCoding2.png" class="project-image" />
+      </div>
+
+      <div class="project-card card">
+        <img src="../assets/images/ImageKiCoding3.png" class="project-image" />
+      </div>
+      <div class="project-card card">
+        <img src="../assets/images/ImageKiCoding7.png" class="project-image" />
+      </div>
+      <div class="project-card card">
+        <img src="../assets/images/ImageKiCoding8.png" class="project-image" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Herausforderungen</h2>
+    <p>
+      Die größte Herausforderung lag darin, eine Lernplattform nicht nur als
+      Editor mit KI-Chat zu bauen, sondern als zusammenhängendes System:
+      Authentifizierung, persistente Projekte, Dateiverwaltung,
+      Aufgabenlogik, Sandbox-Ausführung, Fortschritt, Tutor-Gedächtnis und
+      Guardrails mussten sauber zusammenspielen.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Learnings</h2>
+    <p>
+      Eine gute KI-Lernplattform entsteht nicht allein durch ein Sprachmodell,
+      sondern durch Kontext, Struktur und klare Produktlogik. Besonders
+      wichtig waren die Trennung zwischen deterministischer Validierung und
+      KI-Unterstützung, eine robuste Datenpersistenz und ein Tutor, der
+      Lernen unterstützt, ohne den Lernprozess durch fertige Lösungen zu
+      umgehen.
+    </p>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 Ivan Gelov</p>
+</footer>
+```
+
+  </body>
+</html>
